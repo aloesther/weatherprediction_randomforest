@@ -75,8 +75,6 @@ results_weather = pd.DataFrame({
 
 print(results_weather.tail(10))
 
-pip install  streamlit
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -140,5 +138,3 @@ st.line_chart(results_weather)
 
 st.header("Sample of Actual vs Predicted Tmax")
 st.dataframe(results_weather.tail(10))
-
-streamlit run app.py
